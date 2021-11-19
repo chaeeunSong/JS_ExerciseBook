@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 function 문법 정확한 사용법</title>
+
+    <style>
+        .alert-box { background:#066AFF; color:#D0F8FF; padding:20px; border-radius:5px; display:none;}
+
+    </style>
+</head>
+<body>
+
+    <div class="alert-box" id="alert">Alert 박스
+        <button id="close_bt" onclick="alert_close()">닫기</button>
+    </div>
+    <br>
+    <button onclick="alert_open()">버튼</button>
+
+    <script>
+    /*
+        function 아무렇게나작명(){
+            긴 코드~
+            긴 코드~
+        }
+
+        아무렇게나작명()
+
+        */
+
+        function alert_open(){
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function alert_close(){
+            document.getElementById('alert').style.display = 'none';
+        }
+
+
+    </script>
+
+</body>
+</html>

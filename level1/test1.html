@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 목적과 셀렉터</title>
+</head>
+<body>
+
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올때메로나</h2>
+
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+        // 웹문서 의 ID hello인 HTML요소를 가져와 내부글자를 안녕으로 바꿔
+
+        //document.getElementById('??').style.display = '';
+                                    // ^ 검색필요 ^
+
+        document.getElementById('hi').innerHTML = '올때바밤바';
+        // = 등호는 대입. 같다가 아님. 오른쪽거를 왼쪽에 집어넣어주세요. 안녕을 hi에 넣어주세요
+        // document.getElementById('hi') 셀렉터.
+
+        // 숙제. 자바스크립트 코드로 .hello 글자 사이즈를 30px로 바꾸어라.
+        document.getElementById('hi').style.fontSize = '30px';
+    </script>
+</body>
+</html>

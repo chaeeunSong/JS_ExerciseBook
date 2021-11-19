@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 쓰는 이유 & 기초내용 빠른 정리</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <p class="greeting">안녕하세요</p>
+    <p class="greeting">안녕하세요</p>
+    <p class="greeting">안녕하세요</p>
+
+    <button class="btn">버튼btn</button>
+    <button class="btn">버튼btn</button>
+    <button class="btn">버튼btn</button>
+
+    <script>
+        // document.getElementsByClassName('greeting')[0].innerHTML = '안녕';
+        // document.getElementsByClassName('greeting')[1].innerHTML = '안녕';
+        // document.getElementsByClassName('greeting')[2].innerHTML = '안녕';
+
+        $('.greeting').html('안녕');
+        // $('.greeting').eq(0).html('안녕');    // 위에서부터 0번째만
+
+        $('.btn').on('click',function(){
+            alert("띄워주셈~~")
+        });
+
+        // 3. 쉽게만드는 애니메이션 UI
+        // document.getElementsByClassName('btn')[0].addEventListener('click',function(){
+        //     document.getElementsByClassName('greeting')[0].style.display = 'none';
+        // });
+
+        $('.btn').on('click',function(){
+            $('.greeting').hide();
+        })
+
+    </script>
+</body>
+</html>

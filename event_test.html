@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .event_con{width:100%; overflow:hidden;}
+        .event_wrap{width:60%; margin:0 auto;}
+        .event_con .event_sec{width:100%; overflow:hidden;}
+        .event_sec img{width:100%; display:block;}
+        .event_tab{width:100%; overflow:hidden;}
+        .event_tab_wrap{width:100%; overflow:hidden;}
+        div[class*=tab_menu]{width:33.33%; float:left; text-align:center;}
+        .event_tab_con img{width:100%; position:relative;}
+        .tab_img1 div{width:100%; overflow:hidden; display:block;}
+        .tab_img2 div{width:100%; overflow:hidden; display:none;}
+        .tab_img3 div{width:100%; overflow:hidden; display:none;}
+    </style>
+</head>
+
+<body>
+<div class="event_con">
+    <div class="event_wrap">
+        <div class="event_sec">
+            <img src="https://source.unsplash.com/random">
+        </div>
+
+        <div class="event_tab">
+            <div class="event_tab_wrap">
+                <div class="tab_menu1">24일(수)</div>
+                <div class="tab_menu2">25일(목)</div>
+                <div class="tab_menu3">26일(금)</div>
+            </div>
+            <div class="event_tab_con">
+                <div class="tab_img1"><div>1. 24일 수</div></div>
+                <div class="tab_img2"><div>2. 25일 목</div></div>
+                <div class="tab_img3"><div>3. 26일 금</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<script>
+    $('.tab_menu1').on('click',function(){
+        $('.tab_img1 div').css('display','block');
+        $('.tab_img2 div').css('display','none');
+        $('.tab_img3 div').css('display','none');
+    });
+
+    $('.tab_menu2').on('click',function(){
+        $('.tab_img2 div').css('display','block');
+        $('.tab_img3 div').css('display','none');
+        $('.tab_img1 div').css('display','none');
+    });
+
+    $('.tab_menu3').on('click',function(){
+        $('.tab_img3 div').css('display','block');
+        $('.tab_img2 div').css('display','none');
+        $('.tab_img1 div').css('display','none');
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+

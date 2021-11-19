@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery 설치와 기초 셀렉터 정리</title>
+    <!--html 읽어오는 시간때문에 body 태그 끝나기전에 모든 js들을 넣는게 가장 이상적인 방법-->
+    <!-- jQuery 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .yellow_bg{
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h4 id="test">안녕하세요</h4>
+    <script>
+        $('h4').addClass('yellow_bg');
+    </script>
+</body>
+</html>

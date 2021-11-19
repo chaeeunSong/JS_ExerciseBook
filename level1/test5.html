@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 이벤트리스너 addEventListener & UI 재사용하기</title>
+
+    <style>
+        .alert-box { background:#066AFF; color:#D0F8FF; padding:20px; border-radius:5px; display:none;}
+    </style>
+</head>
+<body>
+
+<div class="alert-box" id="alert">
+    <p id="title">아이디를 입력하세요</p>
+    <button id="close_bt">닫기</button>
+</div>
+<br>
+    <button id="button1">열기</button>
+    <button id="button2">버튼</button>
+
+<script>
+
+    // 이벤트리스너활용. 태그안의 onClick 이벤트속성 빼기.
+    // 일단외우기 - 이 요소가 클릭이되면 이벤트리스너 안에 있는 코드 실행해주세요
+    document.getElementById('close_bt').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'none';
+    });
+
+    document.getElementById('button1').addEventListener('click', function(){
+       document.getElementById('alert').style.display = 'block';
+       document.getElementById('title').innerHTML = '아이디를 입력하셈'
+    });
+
+    document.getElementById('button2').addEventListener('click', function(){
+        document.getElementById('alert').style.display = 'block';
+        document.getElementById('title').innerHTML = '패스워드를 입력하셈'
+    });
+
+</script>
+
+</body>
+</html>
