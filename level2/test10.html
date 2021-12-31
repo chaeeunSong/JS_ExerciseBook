@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>탭기능 다시만들기 : 이벤트 버블링 응용과 dataset</title>
+    <link rel="stylesheet" href="css/TabUI.css">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container mt-5">
+    <ul class="list">
+        <li class="tab-button" data-id="0">Products</li>
+        <li class="tab-button active" data-id="1">Information</li>
+        <li class="tab-button" data-id="2">Shipping</li>
+    </ul>
+    <div class="tab-content">
+        <p>상품설명입니다. Product</p>
+    </div>
+    <div class="tab-content show">
+        <p>상품정보입니다. Info</p>
+    </div>
+    <div class="tab-content">
+        <p>배송정보입니다. Shipping</p>
+    </div>
+</div>
+
+<!-- JS 소스코드 -->
+<script src="js/test10.js"></script>
+
+</body>
+</html>
