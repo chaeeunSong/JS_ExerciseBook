@@ -40,7 +40,7 @@ $('.list').click(function(e){
     탭열기(e.target.dataset.id)
 })
 
-// dataset 활용하여 사용함. JQUERY 문법용 (호환성 생각하면 jquery버전을 더 자주사용할수있음.)
+// dataset 활용하여 사용함. JQUERY 문법용 (호환성 생각하면 jquery 버전을 더 자주사용할수있음.)
 $('.list').data('작명', '값');
 $('.list').data('작명');
 
