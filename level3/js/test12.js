@@ -17,11 +17,10 @@ $(window).scroll(function(){
 
     if(높이 < 1200){
         $('.card-box').eq(0).css('opacity', y);
-                                        // 600 ~ 1200 스크롤 될 때 opacity 0~1의 값을 가지는 변수를 넣어야함 = y
+                                        // ^ 600 ~ 1200 스크롤 될 때 opacity 0~1의 값을 가지는 변수를 넣어야함 = y
         $('.card-box').eq(0).css('transform', `scale(${z})`);
     }else if(높이 < 2000){
         $('.card-box').eq(1).css('opacity', a);
-        // 600 ~ 1200 스크롤 될 때 opacity 0~1의 값을 가지는 변수를 넣어야함 = y
         $('.card-box').eq(1).css('transform', `scale(${b})`);
     }
 })
