@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hammer.js로 이미지 슬라이드 터치 기능 만들기 1</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <style>
+        /*부모태그의 스타일이 300vw라 자식태그의 100vw를 3개 담을수 있다*/
+        .slide-container{width:300vw; height:500px; }
+        .slide-box{width:100vw; float:left; height:500px;}
+        .slide-box img{width:100%;}
+
+        .action1{transform:translateX(-100vw); transition:transform 1s;}
+        .action2{transform:translateX(-200vw); transition:transform 1s;}
+        .action3{transform:translateX(0vw); transition:transform 1s;}
+
+        .slide-next{position:absolute; top:45%; right:0;}
+        .slide-before{position:absolute; top:45%; left:0;}
+
+        .transforming{
+            transition: transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+<h4 class="my-4 text-center">Showcase</h4>
+
+<div style="overflow:hidden; position:relative;">
+    <div class="slide-container">
+        <div class="slide-box"><img src="img/card1.png" alt=""></div>
+        <div class="slide-box"><img src="img/card2.png" alt=""></div>
+        <div class="slide-box"><img src="img/card3.png" alt=""></div>
+    </div>
+    <button class="slide-before">before</button>
+    <button class="slide-next">Next</button>
+</div>
+
+<button class="slide-1">1</button>
+<button class="slide-2">2</button>
+<button class="slide-3">3</button>
+
+<div class="my-5"></div>
+
+
+<!-- JS 소스코드 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
+<script src="js/test13.js"></script>
+</body>
+</html>
